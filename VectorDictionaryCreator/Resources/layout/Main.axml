@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="151.5dp"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="187.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2">
+            <Button
+                android:text="Список справочников"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDictList" />
+            <Button
+                android:text="Сформировать справочники"
+                android:layout_width="match_parent"
+                android:layout_height="49.5dp"
+                android:id="@+id/btnCreateDict" />
+            <Button
+                android:text="Сформировать расписание"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCreateSchedule" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout3">
+            <Button
+                android:text="Список рабочих файлов"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnWorkList" />
+            <Button
+                android:text="Удалить файл"
+                android:id="@+id/btnDelFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="Сохранить файл"
+                android:id="@+id/btnSaveFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="105.0dp"
+        android:id="@+id/lvFiles"
+        android:scrollbars="vertical"
+        android:choiceMode="singleChoice" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mlFileText"
+        android:scrollbars="vertical"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+</LinearLayout>
