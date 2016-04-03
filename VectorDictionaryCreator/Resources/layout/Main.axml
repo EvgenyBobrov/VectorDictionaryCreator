@@ -6,66 +6,87 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="151.5dp"
-        android:id="@+id/linearLayout1">
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout1"
+        android:layout_weight="1">
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="187.5dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout2">
+            android:id="@+id/linearLayout2"
+            android:layout_weight="1">
             <Button
                 android:text="Список справочников"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnDictList" />
+                android:layout_height="match_parent"
+                android:id="@+id/btnDictList"
+                android:layout_weight="1" />
             <Button
                 android:text="Сформировать справочники"
                 android:layout_width="match_parent"
-                android:layout_height="49.5dp"
-                android:id="@+id/btnCreateDict" />
+                android:layout_height="match_parent"
+                android:id="@+id/btnCreateDict"
+                android:layout_weight="1" />
             <Button
                 android:text="Сформировать расписание"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/btnCreateSchedule" />
+                android:id="@+id/btnCreateSchedule"
+                android:layout_weight="1" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout3">
+            android:id="@+id/linearLayout3"
+            android:layout_weight="1">
             <Button
                 android:text="Список рабочих файлов"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnWorkList" />
+                android:layout_height="match_parent"
+                android:id="@+id/btnWorkList"
+                android:layout_weight="1" />
             <Button
                 android:text="Удалить файл"
                 android:id="@+id/btnDelFile"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
             <Button
                 android:text="Сохранить файл"
                 android:id="@+id/btnSaveFile"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>
-    <ListView
-        android:minWidth="25px"
-        android:minHeight="25px"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="105.0dp"
-        android:id="@+id/lvFiles"
-        android:scrollbars="vertical"
-        android:choiceMode="singleChoice" />
-    <EditText
-        android:inputType="textMultiLine"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout5"
+        android:layout_weight="1">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvFiles"
+            android:choiceMode="singleChoice" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mlFileText"
-        android:scrollbars="vertical"
-        android:overScrollMode="always"
-        android:scrollbarStyle="insideOverlay"
-        android:scrollbarAlwaysDrawVerticalTrack="true" />
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout6"
+        android:layout_weight="1">
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mlFileText"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_weight="1" />
+    </LinearLayout>
 </LinearLayout>

@@ -73,10 +73,16 @@ namespace VectorDictionaryCreator
 			public const int linearLayout3 = 2131034117;
 			
 			// aapt resource value: 0x7f050009
-			public const int lvFiles = 2131034121;
+			public const int linearLayout5 = 2131034121;
+			
+			// aapt resource value: 0x7f05000b
+			public const int linearLayout6 = 2131034123;
 			
 			// aapt resource value: 0x7f05000a
-			public const int mlFileText = 2131034122;
+			public const int lvFiles = 2131034122;
+			
+			// aapt resource value: 0x7f05000c
+			public const int mlFileText = 2131034124;
 			
 			static Id()
 			{
