@@ -110,7 +110,7 @@ namespace VectorDictionaryCreator
 
 		private bool CreateSchedule ()
 		{
-			var filePath = Path.Combine (CreateDictionaryDirectory (), DictionaryFilePrefix.SCHEDULE_FILE_NAME);
+			var filePath = Path.Combine (FileDataAccessor.GetVectorDataDirectory (), DictionaryFilePrefix.SCHEDULE_FILE_NAME);
 			var testDataAccessor = new TestDataAccessor ();
 			var scheduleItems = testDataAccessor.GetSchedule (System.DateTime.Today);
 			var schedule = new FlightSchedule (){ Paradroms = scheduleItems };
